@@ -186,13 +186,13 @@ public class Game extends Activity {
 	@Override
 	protected void onResume() {
 		super.onResume();
-		com.uk.ninja.qa.gusudoku.Music.play(this, R.raw.game);
+		//com.uk.ninja.qa.gusudoku.Music.play(this, R.raw.game);
 	}
 
 	@Override
 	protected void onPause() {
 		super.onPause();
-		com.uk.ninja.qa.gusudoku.Music.stop(this);
+		//com.uk.ninja.qa.gusudoku.Music.stop(this);
 		// Save the current puzzle
 		getPreferences(MODE_PRIVATE).edit()
 				.putString(PREF_PUZZLE, toPuzzleString(puzzle)).commit();
