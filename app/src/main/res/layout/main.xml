@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#b5e3f7"
     android:gravity="center"
     android:orientation="vertical"
@@ -9,39 +9,52 @@
     android:weightSum="1">
 
 
-    <TextView
-        android:layout_width="wrap_content"
+    <ImageView
+        android:layout_width="311dp"
+        android:layout_height="295dp"
+        android:id="@+id/guLogo"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/gu_logo"
+        android:layout_weight="0.65" />
+
+    <GridLayout
+        android:layout_width="233dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dip"
-        android:text="@string/main_title"
-        android:textSize="24.5sp" />
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/buttonGrid">
 
+        <Button
+            android:id="@+id/continue_button"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_label"
+            android:layout_row="0"
+            android:layout_column="0" />
 
-    <Button
-        android:id="@+id/continue_button"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="@string/continue_label" />
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/about_label"
+            android:layout_row="0"
+            android:layout_column="1" />
 
+        <Button
+            android:id="@+id/new_button"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game_label"
+            android:layout_row="1"
+            android:layout_column="0" />
 
-    <Button
-        android:id="@+id/new_button"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="@string/new_game_label" />
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:text="@string/exit_label"
+            android:layout_row="1"
+            android:layout_column="1" />
+    </GridLayout>
 
-
-    <Button
-        android:id="@+id/about_button"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="@string/about_label" />
-
-
-    <Button
-        android:id="@+id/exit_button"
-        android:layout_width="110dp"
-        android:layout_height="wrap_content"
-        android:text="@string/exit_label" />
 
 </LinearLayout>
